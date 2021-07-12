@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(0, 0%, 95%);
+    Font size: 15px;
+    font-family: "Lexend Deca";
+    font-Weight: 700;
+}
+
+.container{
+    max-width: 1440px;
+    height: 100vh;
+    padding: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.three-column{
+    display: flex;
+}
+
+.box{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.box img{
+    width: 50px;
+    height: auto;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.box h1, button{
+    color: hsl(0, 0%, 95%);
+}
+
+.box h1{
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.box p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.box button{
+    width: 100px;
+    height: 30px;
+    background: hsl(0, 0%, 95%);
+    color: rgba(0, 0, 0, .5);
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px;
+    border: 2px solid white;
+}
+
+.box button:hover{
+    background: none;
+    color: hsl(0, 0%, 95%);
+}
+
+.sedans{
+    background: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.suvs{
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+@media only screen and (max-width:375px){
+    .three-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans{
+        background: hsl(31, 77%, 52%);
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .suvs{
+        background: hsl(184, 100%, 22%);
+    }
+    
+    .luxury{
+        background: hsl(179, 100%, 13%);
+        border-radius: 0 0 5px 5px;
+    }
+}
